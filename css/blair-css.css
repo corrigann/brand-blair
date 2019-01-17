@@ -1,9 +1,9 @@
 head {
-	font-size:40px;
+	font-size: 40px;
 }
 
-#about, #work, #contact, #portfolio {
-	height: 600px;
+#about, #contact, #portfolio {
+	height: 800px;
 }
 
 body {
@@ -35,28 +35,44 @@ header {
     background-size: cover;
 }
 
+#main-logo {
+    position: relative;
+    width: 550px;
+    height: auto;
+    float: right;
+    bottom: -47px;
+}
+
+
 header h1 { 
-    padding: 50px 0;
-    font-size: 20px;
+    padding: 70px 0;
+    font-size: 24px;
     color: white;
     font-family: 'Rufina', serif;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
+    font-weight: lighter;
 }
 
 nav {
     float: right; 
-    padding: 75px 25px;
+    padding: 75px 5px;
+    margin-left: -100px;
 }
+
 nav ul li{
     display: inline-block;
 }
 nav ul li a {
     text-transform: uppercase;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 14px;
     color: white;
-    padding-left: 50px; 
-    letter-spacing: 2px;
+    padding-left: 40px; 
+    letter-spacing: 5px;
+}
+
+nav ul li a:hover {
+    color: black;
 }
 
 header h2 {
@@ -66,7 +82,8 @@ header h2 {
     font-size: 72px;
     line-height: 80px;
     color: #a1a690;
-    padding: 20px 0;
+    padding: 5px 0;
+    letter-spacing: 2px;
 }
 
 header h2 span {
@@ -91,10 +108,25 @@ header h2 span {
 }
 
 #about p {
-	font-size: 20px;
+	font-size: 18px;
+    font-family: 'Oxygen', sans-serif;
 	color: white;
 	line-height: 40px;
 	padding-right: 50px;
+    letter-spacing: 3px;
+    font-weight: lighter;
+}
+
+#about img {
+    width: 500px;
+    margin-top: 110px;
+    margin-left: 50px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: white;
+    border-width: 10px;
+    float: bottom;
+
 }
 
 /***** WORK *****/
@@ -102,32 +134,70 @@ header h2 span {
 #work {
 	background: #dae3d2;
 	text-align: center;
+    height: 800px;
+    background-size: cover;
 }
 
 #work .full-width {
-	padding: 115px 0;
+    padding: 115px 0px;
 }
 
  
 #work img {
-    padding-bottom: 30px;
+    scale: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+    padding-right: 40px;
 }
 
 #work h3 {
     font-size: 24px;
     font-family: 'Rufina', serif;
-    width: 190;
     margin: 0 auto;
     letter-spacing: 2px;
+    display: inline-block;
+    text-align: center;
+    padding-right: 40px;
 }
 
-#work p {
-    font-family: 'Oxygen', sans-serif;
-    font-size: 18px;
-    line-height: 30px;
-    color: white;
-    padding: 0 35px;
+
+/***** PRICING *****/
+
+#pricing {
+    background: #e6e2c7;
+    background-size: cover;
 }
+
+#pricing .full-width {
+    width: 1200px;
+    height: 800px;
+    
+}
+
+#pricing .full-width h1 {
+    font-size: 24px;
+    font-family: 'Rufina', serif;
+    letter-spacing: 2px;
+    text-align: center;
+    padding-top: 80px;
+}
+
+#pricing .full-width h2 {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 12px;
+    font-weight: lighter;
+    letter-spacing: 3px;
+    text-align: center;
+    color: black;
+}
+
+#pricing img {
+    width: 1000px;
+    margin-top: 60px;
+    margin-left: 60px;
+}
+
 
 /***** CONTACT *****/
 
@@ -135,58 +205,119 @@ header h2 span {
 	background: #c87349;
 }
 
+#blue-logo {
+    width: 125px;
+    padding-left: 110px;
+    display: inline-block;
+}
+
 #contact .full-width {
-    padding: 55px 0;
+    padding-top: 40px;
 }
 
-#contact #contact-img {
-    margin-left: 25px;
-    border: 12px solid #ffffff;
+#map {
+    float: left; 
+    border-top: 40px; 
+    padding-left: 10px;
+    border-style: white;
+    padding-top: 40px;
 }
 
-#contact h2, #contact #email-header, #contact #socialmedia-header, #contact ul {
+
+#contact h2, #contact #email-header, #contact, #socialmedia-header, #contact ul, {
     padding-left: 115px;
 }
 
-#contact #envelope {
-    padding: 0 10px 0 0px;
-}
 
 #contact h2 {
     font-family: 'Rufina', serif;
-    font-size: 24px;
-    line-height: 44px;
+    font-size: 28px;
+    line-height: 30px;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: lighter;
+    padding-left: 115px;
+    padding-top: 20px;
 }
 
-#contact #call-me-header {
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 44px;
+
+#contact h3 a {
+    font-family: 'Rufina', serif;
+    font-size: 16px;
+    font-weight: lighter;
+    line-height: 30px;
     margin: -30px 0 5px 0;
-    color: #a1a690;
+    color: #dae3d2;
+    letter-spacing: 3px;
+}
+
+/* mouse over link */
+#contact h3 a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+#contact h3 span {
+    font-weight: lighter;
+    font-family: 'Oxygen', sans-serif;
+    color: black;
+    font-size: 14px;
+}
+
+#contact h5 {
+    font-weight: lighter;
+    font-family: 'Oxygen', sans-serif;
+    color: black;
+    font-size: 14px;
+    letter-spacing: 4px;
+    padding-left: 115px;
+    line-height: 20px;
+    margin: 10px 0 5px 0;
+}
+
+
+#contact h3 {
+    font-family: 'Rufina', serif;
+    font-size: 16px;
+    font-weight: lighter;
+    line-height: 30px;
+    margin: -30px 0 5px 0;
+    color: #dae3d2;
+    letter-spacing: 3px;
+    padding-left: 115px;
+}
+
+
+#contact h6 {
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: lighter;
+    margin-top: 20px;
+    bottom: -30px;
+}
+
+#contact h6 a:visited, a:active {
+    color: inherit;
+}
+
+#contact h6 a:hover {
+    color: white;
 }
 
 #contact #salon-title {
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 44px;
-    margin: 40px 0 0 0;
-    color: #a1a690;
-}
-
-#contact a {
-    text-decoration: none;
-    color: white;
-    font-size: 29px;
+    font-weight: lighter;
+    font-size: 16px;
+    line-height: 20px;
+    color: #dae3d2;
+    padding-left: 115px;
 }
 
 #contact ul {
     list-style: none;
 }
+
 #contact ul li {
      display: inline-block;
 }
-#contact ul img {
-    font-size: 32px;
-    padding-right: 48px;
-}
+
